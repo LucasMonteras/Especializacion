@@ -15,7 +15,7 @@ Los microservicios son un enfoque arquitectónico y organizativo para el desarro
 
 En resumen, los microservicios ofrecen una forma de desarrollar software que es más escalable, flexible, fácil de mantener, y que permite una colaboración efectiva entre equipos de desarrollo. Sin embargo, también introducen desafíos, como la gestión de la comunicación entre microservicios y la necesidad de monitorear y asegurar cada uno de ellos. Por lo tanto, es importante evaluar si esta arquitectura es adecuada para tu proyecto antes de adoptarla.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/337f021e-2a13-49c0-b98b-1e753c5f3178/Untitled.png)
+
 
 ## ¿Cuál es una de las desventajas de la arquitectura de microservicios en términos de rendimiento?
 
@@ -44,7 +44,6 @@ El componente de monitoreo desempeña un papel fundamental en la supervisión de
 
 El traceo distribuido es una técnica que se utiliza para rastrear y registrar el flujo de una solicitud a través de varios servicios en una arquitectura de microservicios. Permite seguir el recorrido de una solicitud a medida que viaja a través de diferentes componentes y servicios, lo que facilita la identificación de cuellos de botella y problemas de rendimiento en la aplicación. El traceo distribuido es esencial para comprender y depurar problemas complejos en un entorno de microservicios, ya que proporciona una visión detallada de cómo interactúan los servicios entre sí y ayuda a mejorar la eficiencia y el rendimiento del sistema en su conjunto.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/ae79cdf5-0b23-4e0f-89ae-f07a0670b1e1/Untitled.png)
 
 ## Check point de conocimiento
 
