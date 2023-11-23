@@ -59,5 +59,149 @@ El traceo distribuido es una técnica que se utiliza para rastrear y registrar e
 
 ![image](https://github.com/LucasMonteras/Especializacion/assets/100173868/695d2d69-6153-4238-ab60-931dec341c84)
 
+# Componentes de Spring Cloud
+
+Componenetes que implementan patrones de diseños
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/606180c3-2757-4bc5-a13f-2e137cfa2b81/Untitled.png)
+
+
+## Eureka
+
+Es el encargado del registro y descubrimiento de microservicios .Resuelve la necesidad de llevar el registro de los servicios disponibles dentro del sistema y donde estan ubicados . En caso que escale un servicio por demanda este llevara el registro de los que estan disponibles asi tambien cuando deja de estar disponible por baja demanda y sacarlo del registro . Ejemplo el servicio A consume el B , pero este escalo y necesita un componente que tenga los registros y ubicacion  para darselo al servicio A y asi comunicarse .
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/2f049d56-73ff-4399-ac3d-152627ee2e04/Untitled.png)
+
+
+# Arquitecturea de Eureka server
+
+Se pude dividir a Eureka en dos en 2 grandes componentes : 
+
+**Eureca server** : Es el encargado de llevar el registro de todos los servicios disponibles .
+
+**Eureca cliente** : (En cada uno de los servicos ). Se comunica con el servidor (eurekas server) e informa que un servicio esta disponible y obtiene la lista de los servicios disponibles para luego poder comunicarse.
+
+Esto sucede porque eureka expone una API REST . Tiene una serie de metodos y los mas utilizados para este flujo son :
+
+1 **Registrar microservicos (enpoint) :** Cuando un  cliente (eurka client) se despliegue , va a consumir este enpoint y va mandar cierta info .
+
+2 **Obtener listado de ms (enpoint):** Cuando quiera comuniarse con otro servicio del ecosistema , pide el listado de serviciosque estan disponibles 
+
+3 **Actualizar estado de ms(enpoint):** Ecucha el estado de cada uno de los servicios . En todo momento eurka client manda un msj a eureka server que esta disponible , si el lapso de tiempo se interrumpio entonces ese servicio ya no esta disponible y eureca va suponer que ya no esta y lo ilimina del registro .
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/10d3cf0a-e165-40cd-86ad-c685374cf122/Untitled.png)
+
+
+## Configuracion de Ereka server
+
+Se crea el preoyectos desde [start.spring.io](http://start.spring.io)  , uno como eureka-cliente con las dependencias Spring web y Eureka discovery client . El otro como eureka-server tambien con las dependencias spring web y eureka server 
+
+En eureka-server en la clase principal se agrega una anotacion para habilitar el proyecto de spring boot como servidor de eureka (@EnableEurekaServer).
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/a1ef5a56-d9d5-47ca-ac34-1ec49b6fd60b/Untitled.png)
+
+
+En el application.properties se le indica el nombre , el puerto , se coloca anotacion para que el proyecto no figure como cliente disponible.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/1f30039d-0568-46c0-91f2-1dcdc84fd7a6/Untitled.png)
+
+En los clientes se le agrega la dependencia en caso de no crear el proyecto desde cero y se configura solo . En [application.properties](http://application.properties) se le configura el nombre y el puerto.
+
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/b55a7674-6c76-4778-b6e1-b5d7ab037817/Untitled.png)
+
+
+## Spring boot Actuator (monitorea nuestros microservicios).
+
+- Libreria que proporciona herrmamientas de monitoreo y administracion .
+- Se accede mediante endpoints REST o JSX .
+- Nos informa sobre el estado de cada microservicio.
+- Es personalizable.
+
+Actuator nos dice que esta en servicio si esta en ejecucion pero puede estar en ejecucion pero no conectado con la base de datos y caida esa parte por eso hay que configurarla con ciertas condiciones y figure que no esta disponible por no estar conectada a la base de datos .
+
+Link documentacion oficial : https://docs.spring.io/spring-boot/docs/current/reference/html/actuator.html#actuator.enabling
+
+## Configuracion en sistemas distribuidos
+
+Configuración centralizada o el Config Server 
+
+En un proyecto tenemos la confg en un archivo [application.properties](http://application.properties) , en donde tenemos la configuración de la base de datos , configuración de seguridad etc .Estas configuraciones cambian dependiendo del ambiente en donde estemos trabajando (local,testing) esto hace dificil el mantener y actualizarlo .
+
+El config-server va persistir todas estas configuraciones (application.properties) y cada vez que se despligue un sevicio este lo va a buscar en el config-server de tal ambiente . De esta manera estaria toda la configuración centralizada en un solo componente
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/14031096-6b9f-4e28-8875-908add921bcf/Untitled.png)
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/e5874cf9-2eec-4354-a68b-7edae1aaf7e9/Untitled.png)
+
+Es el encargado de proveer los archivos de configuración a los servicios , asi el config-server va a guardar los archivos de configuracion en un repositorio (github).El config-server busca en git  la configuracion  este se lo pasa y asi tambien se lo pasa al servicio , el servico a su vez va a rener un cliente config-server-client , para qe config-server sepa cual archivo descargar se repeta una nomeclatura especifica SE CREA ARCHIVOS CONFORMADOS POR {EL NOMBRE DEL SERVICIO}-{AMBINETE}.properties ej productsService-test.
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/d23f89d6-90ca-467b-b632-aa4fea6b07d5/Untitled.png)
+
+Se crea un nuevo proyecto desde [start.spring.io](http://start.spring.io) como simepre con la dependencia Config Server , una vez creado habilitamos como servidor de configuraciones con la anotacion  @EnableCconfigSeerver (https://docs.spring.io/spring-cloud-config/docs/current/reference/html/#_spring_cloud_config_server) y en la properties setea la direccion del git :
+
+`server.port: 8888
+spring.cloud.config.server.git.uri: file://${user.home}/config-repo`
+
+Con esto ya esta configurado el confi-server y ahora la configuracion de product-service que va a ser cliente de config-server :
+
+En el archivo pom.xml del proyecto product-service, se debe agregar la siguiente dependencia:
+
+`<dependency>
+<groupId>org.springframework.cloud</groupId>
+<artifactId>spring-cloud-starter-config</artifactId>
+</dependency>`
+
+En la documentación del cliente de configuración (config client), se nos indica qué hacer. Lo único que debemos hacer es especificar la dirección del config-server. Una opción es indicarle a Eureka el nombre del servicio, ya que este lleva el registro de los mismos. La otra opción es hacerlo con el host.
+
+Para utilizar un repositorio privado , en la parter de autenticacion se puede utilizar ssh , una clave para el repositorio ssh en el siguiente link esta la doc https://docs.github.com/es/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account  .La clave publica en el dashboar de git y la privada seteamos en le proyecto config-server , en la configuracion combio de protocolo ssh , el algoritmo de la doc oficial ssh-rsa . 
+
+Para integrar eureka se agrega la dependencia  `<artifactId>spring-cloud-starter-netfix-eureka-client</artifactId>`  en config-server y desde product-service modificamos la configuracion en ves de indicarle el puerto y el host solamente el nombre del servicio de esa manera lo va a ir a buscar eureka y va saber donde esta ubicado , con solo ejecutarlo se va a registrar en eureka . Ademas hay que nombrarlo spring.application.name=” config-service ” ,tener cuidado con el nombre.
+
+En la doc de Config Client no va a facilitar las properties para :
+
+`spring.cloud.config.discovery.enabled=true` : Habilitar el descubrimineto de config-server utilizando eureka 
+
+`spring.cloud.config.discovery.servideId` = Nombre con el que se esta registrando el config-server (osea el config-server)
+
+`spring.config.import =optional:configserver`  = indica el config server , en caso que pueda encontrar lo anterior .
+
+`eureka.instance.hostname=localhost`  = para que eureka utilice de manera local sino por defecto utiliza un numero de ip “ tener en cuenta cuando se trabaje de manera local ” .Tanto en el config-server 
+
+# Invocaciones REST declarativas y balanceo de carga
+
+## Feign
+
+Documnetacion:https://docs.spring.io/spring-cloud-openfeign/docs/current/reference/html/#netflix-feign-starter
+
+ Es una libreria que actua como: “Cliente REST que manda peticiones a una API” , es una libreria de spring cloud que se integra con el resto de los componentes Ej con esta libreria podriamos mandar una peticion a un servicio de nuestro sistema utilizando el nombre porque se integra con eureka en lugar de estar acoplado a una dirección y puerto , si desplegamos otra instancias de product-service seguiria funcionando nuestro codigo y no tendriamos que hacer ninguna modificación.
+
+Feing es un cliente REST declarativo , quiere decir que tenemos que agregar anotaciones a los metodos de una interfaz pero no vamos a tener que implementar esos metodos . Con estas anotaciones configuramos a donde por ej a donde queremos mandar la peticion , que metodos queremos utilizar , si queremos mandar header etc , pero nunca vamos a desarrolar el metodo completo eso los hace feign por nosotros . A su vez se va a integar con eureka para obtener la ubicacion real de ese servicio .
+
+Para poder integrar feign en este caso es crear un proyecto nuevo Checkout para que se pueda comunicar con el de producto .Se crea como siempre en [start.spring.io](http://start.spring.io) con las siguientes dependecias : 
+
+- Eureka Discovery Cliente
+- Config Client
+- Spring Web (vamos a crear una API en este servicio)
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/c4998ad6-fd06-487e-9ddd-ecb387389824/Untitled.png)
+
+
+Una vez creado en application propewrties :
+
+[`spring.application.name](http://spring.application.name) = checkout-service` 
+
+`server.port = 8081` 
+
+`spring.cloud.config.discovery.enable = true`   (habilitación para utilizar config-service)
+
+`spring.cloud.config.discovery.serviceId = config-service`   (habilitación para utilizar config-service)
+
+Se crea un controller el cual recibi un listado  de ID y devuleve una instancia de checkout , un JSON que representa lo que seria un checkout . ¿Que es un Chekout ? Tiene un id , una url , el total de algo (totoalAlmounds) y metodos disponibles ej representa a la ultima instancia previo a la compra de unos productos .A este enpoint le llegan listado de productos , vamos a ir a buscar a la API de productos estos productos ,vamos agarra el precio de los productos y los vamos sumar y vamos a crear las nueva instancia de checkput indicando el precio total (totoalAlmounds), la url que seria la que el cliente tendria que entrar para poder realizar la compra y metodos disponibles seria tarjeta de creditos , debito etc
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/5d290adb-e7cc-4b4a-bbf3-eb309ff0d137/Untitled.png)
+
+![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/f1715b5c-2859-4c47-b966-2af638477011/Untitled.png)
+
 
 
