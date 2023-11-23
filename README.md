@@ -63,14 +63,14 @@ El traceo distribuido es una técnica que se utiliza para rastrear y registrar e
 
 Componenetes que implementan patrones de diseños
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/606180c3-2757-4bc5-a13f-2e137cfa2b81/Untitled.png)
+![image](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/606180c3-2757-4bc5-a13f-2e137cfa2b81/Untitled.png)
 
 
 ## Eureka
 
 Es el encargado del registro y descubrimiento de microservicios .Resuelve la necesidad de llevar el registro de los servicios disponibles dentro del sistema y donde estan ubicados . En caso que escale un servicio por demanda este llevara el registro de los que estan disponibles asi tambien cuando deja de estar disponible por baja demanda y sacarlo del registro . Ejemplo el servicio A consume el B , pero este escalo y necesita un componente que tenga los registros y ubicacion  para darselo al servicio A y asi comunicarse .
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/2f049d56-73ff-4399-ac3d-152627ee2e04/Untitled.png)
+![image](https://prod-files-secure.s3.us-west-2.amazonaws.com/6102c196-0ac4-4365-b675-35ab38e41efe/2f049d56-73ff-4399-ac3d-152627ee2e04/Untitled.png)
 
 
 # Arquitecturea de Eureka server
