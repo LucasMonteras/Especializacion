@@ -1,41 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="055ea154-da5e-4e5d-99a8-8255c7bfa7e0" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/.idea/Microservicios.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/config-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/config-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/config-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/config-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/config-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/config-server/src/main/java/com/example/configserver/ConfigServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/config-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/config-server/src/test/java/com/example/configserver/ConfigServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/eureka-server/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/eureka-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/eureka-server/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/eureka-server/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/eureka-server/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/eureka-server/src/main/java/com/example/eurekaserver/EurekaServerApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/eureka-server/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/eureka-server/src/test/java/com/example/eurekaserver/EurekaServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/products-service/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/products-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/products-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/products-service/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/products-service/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/products-service/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/products-service/src/main/java/com/example/productsservice/ProductsServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/products-service/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Practicas/Eureka-server/products-service/src/test/java/com/example/productsservice/ProductsServiceApplicationTests.java" beforeDir="false" />
+    <list default="true" id="56e25b04-6726-4927-a7ff-5045fdc4d847" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/Especializacion.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modulo N° 3/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo N° 3/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modulo N° 3/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo N° 3/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modulo N° 3/config-server/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo N° 3/config-server/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modulo N° 3/products-service/src/main/java/com/digitalhouse/products/controller/ProductRestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo N° 3/products-service/src/main/java/com/digitalhouse/products/controller/ProductRestController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modulo N° 3/products-service/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Modulo N° 3/products-service/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/.idea/clase5.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/CheckoutServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/configuration/LoadBalancerConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/controller/CheckoutRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/model/Checkout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/model/dto/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/repository/FeignProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/service/ICheckoutService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/service/IProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/service/implementation/CheckoutService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/java/com/digitalhouse/checkout/service/implementation/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/checkout-service/src/test/java/com/digitalhouse/checkoutservice/CheckoutServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/config-server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/config-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/config-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/config-server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/config-server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/config-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/config-server/src/main/java/com/digitalhouse/configserver/ConfigServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/config-server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/config-server/src/test/java/com/digitalhouse/configserver/ConfigServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/eureka-server/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/eureka-server/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/eureka-server/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/eureka-server/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/eureka-server/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/eureka-server/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/eureka-server/src/main/java/com/digitalhouse/eurekaserver/EurekaServerApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/eureka-server/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/eureka-server/src/test/java/com/digitalhouse/eurekaserver/EurekaServerApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/.mvn/wrapper/maven-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/src/main/java/com/digitalhouse/products/ProductsServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/src/main/java/com/digitalhouse/products/controller/ProductRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/src/main/java/com/digitalhouse/products/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Practicas Modulo 3/Eureka-server/products-service/src/test/java/com/digitalhouse/productsservice/ProductsServiceApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,34 +89,50 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="2XGYwJ18mlINAvrN0dAtEPUcnlk" />
+  <component name="ProjectId" id="2b9ars2l43Bzrte34EuPjhct18a" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/Documents/Lucas/DH/Especializacion/Microservicios/Practicas/Eureka-server&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-20.0.2-corretto-20.0.2.1-f644763e9732-27d99999" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="055ea154-da5e-4e5d-99a8-8255c7bfa7e0" name="Changes" comment="" />
-      <created>1698257122241</created>
+      <changelist id="56e25b04-6726-4927-a7ff-5045fdc4d847" name="Changes" comment="" />
+      <created>1705629949185</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698257122241</updated>
-      <workItem from="1698257123582" duration="83000" />
-      <workItem from="1698628989925" duration="39000" />
+      <updated>1705629949185</updated>
+      <workItem from="1705629950220" duration="6000" />
+      <workItem from="1705688515856" duration="122000" />
+      <workItem from="1705688702154" duration="700000" />
     </task>
     <servers />
   </component>

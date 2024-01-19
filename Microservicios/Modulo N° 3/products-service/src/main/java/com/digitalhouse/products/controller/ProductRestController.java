@@ -11,11 +11,13 @@ import com.digitalhouse.products.model.Product;
 @RestController
 @RequestMapping(value="/products")
 public class ProductRestController {
-
+	
+	
 	@GetMapping()
 	public Product getProduct(@RequestParam String id) {
-		return new Product(id,"Notebook",2000.0,"Instance 2");
+		return new Product(id,"Notebook",2000.0,"Instance 1");
 		
 	}
+	
 
 }
